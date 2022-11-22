@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de form avec js</title>
+    <!-- <link rel="stylesheet" href="awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Formulaire d'inscription aux Clubs Parascolaires à Solicode</h2>
+        </div>
+        <form class="form" id="form" action="/thanxpge.html">
+            <div class="form-control ">
+                <label for="">Nom </label>
+                <input type="text" id="Nom" placeholder="Ronasdev">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="">Prénom</label>
+                <input type="Prénom" id="Prénom" placeholder="Ronasdev">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control ">
+                <label for="">Email</label>
+                <input type="text" id="email" placeholder="ronasdev@gmail.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+                <div class="form-control">
+
+                    <label for="">Télephone</label>
+                    <input type="text" id="Télephone" placeholder="Ronasdev">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div> 
+                <label>Gender:</label>
+                <div id="input-gender" class="input-control">
+                  <div>
+                    <input type="radio" id="male" value="male" name="gender">
+                  <label for="male">Male</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="female" value="female" name="gender">
+                  <label for="female">Female<label>
+                  </div>
+                </div>
+                <div class="error-gender errorr"></div>
+                  <!-- ================= group input ================== -->
+                  <div id="input-group" class="input-control">
+                    <label> choose your Group : </label>
+                    <div>
+                      <input class="group" type="radio" name="group" />
+                      <label>DW101</label>
+
+                    </div>
+                    <div>
+                      <input class="group" type="radio" name="group" />
+                      <label>DW102</label>
+
+                    </div>
+                    <div>
+                      <input class="group" type="radio" name="group" />
+                      <label>DW103</label>
+
+                    </div>
+                    <div>
+                      <input class="group" type="radio" name="group" />
+                      <label>DM101</label>
+
+                    </div>
+                    <div>
+                      <input class="group" type="radio" name="group" />
+                      <label>DM102</label>
+
+                    </div>
+
+                  </div>
+               
+                  <!-- ================= Clubs input ================== -->
+                  <div class="form-control"> 
+                    <select class="form-select" id="clubs"  aria-label="multiple select example" id="input-clubs" id="clubs" multiple>
+                        <option >Choose the Clubs you want to join :</option>
+                        <option value="1">Informatique</option>
+                        <option value="2">Robotique</option>
+                        <option value="3">Jeu déchecs</option>
+                        <option value="3">Musique</option>
+                        <option value="3">Foot</option>
+                        <option value="3">Théatre</option>
+                      </select>
+                    <div class="error-clubs">
+                    </div>
+                  </div>
+            <button type="submit">  S'inscrire</button>
+        </form>
+    </div>
+    <script src="/js.js"></script>
+
+</body>
+</html>
